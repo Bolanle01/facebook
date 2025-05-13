@@ -6,19 +6,111 @@
     <link rel="stylesheet" href="./output.css">
     <title>Facebook log-in</title>
 </head>
-<body>
-    <div>
+<body class="bg-gray-200">
+    <div class="grid justify-center">
         <!-- heading  -->
-        <div>
-            <img src="./assets/Face-book.svg" alt="">
-        </div>
+        
         <!-- form  -->
-        <div>
-            <h1>
-                Log in to Facebook
-            </h1>
-            
+        <div class="flex justify-center">
+            <img class="h-35 w-55 text-lg font-medium " src="./assets/Face-book.svg">
+        </div>
+        <div class="text-center mt-0%">
+             <div class="w-full max-w-sm p-6 bg-white rounded shadow-md ">
+    <h2 class="text-lg font-medium text-center mb-4">Log in to Facebook</h2>
+
+    <form>
+      <input 
+        type="text" 
+        placeholder="Mobile number or email address" 
+        class="w-full px-4 py-3 border border-gray-300 rounded mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      
+      <input 
+        type="password" 
+        placeholder="Password" 
+        class="w-full px-4 py-3 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      
+      <button 
+        type="submit" 
+        class="w-full bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition"
+      >
+        Log in
+      </button>
+
+      <div class="text-center my-3">
+        <a href="#" class="text-blue-600 text-sm hover:underline">Forgotten account?</a>
+      </div>
+
+      <div class="relative text-center my-4">
+        <hr class="border-t border-gray-300" />
+        <span class="absolute top-[-12px] left-1/2 transform -translate-x-1/2 bg-white px-2 text-gray-500 text-sm">or</span>
+      </div>
+
+      <button 
+        type="button" 
+        class="w-full bg-green-500 text-white font-semibold py-2 rounded hover:bg-green-600 transition"
+      >
+        Create new account
+      </button>
+    </form>
+  </div>
+
+
         </div>
     </div>
+</div>
+<div class="bg-white pl-10 ">
+<footer class="bg-white text-sm px-4 py-6 mt-20 w-250">
+  <!-- Language Section -->
+  <div class="flex flex-wrap gap-x-4 gap-y-2 mb-4 text-xs text-gray-400">
+    <span class="hover:underline cursor-pointer">English (UK)</span>
+    <span class="hover:underline cursor-pointer">Hausa</span>
+    <span class="hover:underline cursor-pointer">Français (France)</span>
+    <span class="hover:underline cursor-pointer">Português (Brasil)</span>
+    <span class="hover:underline cursor-pointer">Español</span>
+    <span class="hover:underline cursor-pointer">العربية</span>
+    <span class="hover:underline cursor-pointer">Bahasa Indonesia</span>
+    <span class="hover:underline cursor-pointer">Deutsch</span>
+    <span class="hover:underline cursor-pointer">日本語</span>
+    <span class="hover:underline cursor-pointer">Italiano</span>
+    <span class="hover:underline cursor-pointer">हिन्दी</span>
+    <span class="hover:underline cursor-pointer">+</span>
+  </div>
+
+  <hr class="my-3 border-gray-300">
+
+  <!-- Navigation Section -->
+  <div class="flex flex-wrap gap-x-4 gap-y-2 mb-4 text-xs text-gray-400">
+    <span class="hover:underline cursor-pointer">Sign Up</span>
+    <span class="hover:underline cursor-pointer">Log in</span>
+    <span class="hover:underline cursor-pointer">Messenger</span>
+    <span class="hover:underline cursor-pointer">Facebook Lite</span>
+    <span class="hover:underline cursor-pointer">Video</span>
+    <span class="hover:underline cursor-pointer">Meta Pay</span>
+    <span class="hover:underline cursor-pointer">Meta Store</span>
+    <span class="hover:underline cursor-pointer">Meta Quest</span>
+    <span class="hover:underline cursor-pointer">Ray-Ban Meta</span>
+    <span class="hover:underline cursor-pointer">Meta AI</span>
+    <span class="hover:underline cursor-pointer">Instagram</span>
+    <span class="hover:underline cursor-pointer">Threads</span>
+  </div>
+
+  <!-- Legal and Info Links -->
+  <div class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-gray-400">
+    <span class="hover:underline cursor-pointer">Privacy</span>
+    <span class="hover:underline cursor-pointer">Cookies</span>
+    <span class="hover:underline cursor-pointer">AdChoices</span>
+    <span class="hover:underline cursor-pointer">Terms</span>
+    <span class="hover:underline cursor-pointer">Help</span>
+    <span class="hover:underline cursor-pointer">Create ad</span>
+    <span class="hover:underline cursor-pointer">Create Page</span>
+    <span class="hover:underline cursor-pointer">Developers</span>
+    <span class="hover:underline cursor-pointer">Careers</span>
+  </div>
+
+  <div class="mt-4 text-xs text-gray-400">&copy; 2025 Meta</div>
+</footer>
+</div>
 </body>
 </html>
