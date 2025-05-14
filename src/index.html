@@ -6,27 +6,77 @@
     <title>Facebook Sign Up</title>
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-  <div class="w-full max-w-md bg-white p-6 rounded-md shadow-md">
+<body class="bg-gray-100  items-center grid justify-center min-h-screen ">
     <!-- Facebook Logo -->
-    <h1 class="text-4xl font-bold text-blue-600 text-center mb-2">facebook</h1>
+    <div class="flex justify-center">
+        <img class="h-20" src="./assets/Face-book.svg" alt="">
+    </div>
 
+  <div class="w-[600px] max-w-md bg-white p-6 rounded-md shadow-md mt-">
+    
     <!-- Title -->
     <h2 class="text-xl font-semibold text-center">Create a new account</h2>
     <p class="text-center text-gray-600 mb-4">It's quick and easy.</p>
 
     <!-- Form -->
-    <form class="space-y-3">
+    <form class="space-y-3 grid justify-center">
       <!-- Name Fields -->
       <div class="flex space-x-2">
         <input type="text" placeholder="First name" class="w-1/2 border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
-        <input type="text" placeholder="Surname" class="w-1/2 border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
+        <input type="text" placeholder="Surname" required class="w-1/2 border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
       </div>
 
       <!-- Date of Birth -->
       <label class="block text-sm text-gray-700">Date of birth</label>
       <div class="flex space-x-2">
-        <select class="w-1/3 border rounded px-2 py-2 text-sm">
+        <select class="w-1/3 border rounded px-2 py-2 text-sm" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <select class="w-1/3 border rounded px-2 py-2 text-sm" required>
+          <option value="January">January</option>
+          <option value="Febuary">Febuary</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <select class="w-1/3 border rounded px-2 py-2 text-sm" required>
           <option value="2025">2025</option>
           <option value="2024">2024</option>
           <option value="2023">2023</option>
@@ -155,38 +205,39 @@
       <label class="block text-sm text-gray-700">Gender</label>
       <div class="flex space-x-2">
         <label class="flex items-center w-1/3 border rounded px-3 py-2 text-sm cursor-pointer">
-          Female  <input type="radio" name="gender" class="mr-2">
+          Female  <input type="radio" name="gender" class="mr-2" required>
         </label>
         <label class="flex items-center w-1/3 border rounded px-3 py-2 text-sm cursor-pointer">
-            Male  <input type="radio" name="gender" class="mr-2"> 
+            Male  <input type="radio" name="gender" class="mr-2" required> 
         </label>
         <label class="flex items-center w-1/3 border rounded px-3 py-2 text-sm cursor-pointer">
-            Custom  <input type="radio" name="gender" class="mr-2"> 
+            Custom  <input type="radio" name="gender" class="mr-2" required> 
         </label>
       </div>
 
       <!-- Email & Password -->
-      <input type="text" placeholder="Mobile number or email address" class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
-      <input type="password" placeholder="New password" class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
+      <input type="text" placeholder="Mobile number or email address" required class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
+      <input type="password" placeholder="New password" required class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
 
       <!-- Info Text -->
       <p class="text-xs text-gray-600 mt-2">
         People who use our service may have uploaded your contact information to Facebook. 
-        <a href="#" class="text-blue-600 hover:underline">Learn more.</a>
+        <a href="#" class="text-[#385898] hover:underline">Learn more.</a>
       </p>
 
       <p class="text-xs text-gray-600 mt-2">
         By clicking Sign Up, you agree to our 
-        <a href="#" class="text-blue-600 hover:underline">Terms</a>, 
-        <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a> and 
-        <a href="#" class="text-blue-600 hover:underline">Cookies Policy</a>. 
+        <a href="#" class="text-[#385898] hover:underline">Terms</a>, 
+        <a href="#" class="text-[#385898] hover:underline">Privacy Policy</a> and 
+        <a href="#" class="text-[#385898] hover:underline">Cookies Policy</a>. 
         You may receive SMS notifications from us and can opt out at any time.
       </p>
 
       <!-- Sign Up Button -->
-      <button class="w-full bg-green-600 text-white py-2 mt-2 rounded font-semibold hover:bg-green-700">
+      <button class="bg-[#00A400] text-white text-lg py-2 max-w-2xl px-14 rounded font-bold hover:text-gray-200">
         Sign Up
       </button>
+      <a href=""><h4 class="text-[#1877F2] mx-20">Already have an account</h4></a>
     </form>
   </div>
 
